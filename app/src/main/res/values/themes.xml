@@ -1,0 +1,31 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.MoviesLand" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="Gamed" parent="Theme.MaterialComponents.DayNight.NoActionBar" >
+
+
+
+    </style>
+
+
+    <style name="roundImgView" parent="" >
+
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeBottomLeft">@dimen/_35sdp</item>
+        <item name="cornerSizeBottomRight">@dimen/_35sdp</item>
+        <item name="color">@color/white</item>
+    </style>
+
+    <style name="roundMovie" parent="" >
+
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">@dimen/_20sdp</item>
+        <item name="color">@color/white</item>
+    </style>
+</resources>

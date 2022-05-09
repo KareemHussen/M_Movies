@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#0F171E">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/favImg"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_120sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearanceOverlay="@style/roundMovie"
+
+        app:srcCompat="@drawable/cartoon" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_6sdp"
+        android:layout_marginTop="@dimen/_4sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/favImg" />
+
+    <TextView
+        android:id="@+id/favTitle"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_45sdp"
+        android:layout_marginStart="@dimen/_6sdp"
+        android:layout_marginTop="@dimen/_18sdp"
+        android:text="Spider Man No Way Home"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_14ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/favImg"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/favYear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="@dimen/_6sdp"
+        android:text="2020"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_14ssp"
+        app:layout_constraintStart_toEndOf="@+id/favImg"
+        app:layout_constraintTop_toBottomOf="@+id/favTitle" />
+</androidx.constraintlayout.widget.ConstraintLayout>

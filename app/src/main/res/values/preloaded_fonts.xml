@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/aldrich</item>
+        <item>@font/allan</item>
+        <item>@font/bowlby_one_sc</item>
+        <item>@font/montserrat_bold</item>
+    </array>
+</resources>

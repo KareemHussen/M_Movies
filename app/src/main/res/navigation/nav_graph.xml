@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/details_Fragment">
+
+    <fragment
+        android:id="@+id/details_Fragment"
+        android:name="com.example.moviesland.Details_Fragment"
+        android:label="fragment_details"
+        tools:layout="@layout/fragment_details" >
+        <action
+            android:id="@+id/action_details_Fragment_to_exoPlayer_Fragment"
+            app:destination="@id/exoPlayer_Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/exoPlayer_Fragment"
+        android:name="com.example.moviesland.ExoPlayer_Fragment"
+        android:label="fragment_exo_player"
+        tools:layout="@layout/fragment_exo_player" />
+</navigation>
